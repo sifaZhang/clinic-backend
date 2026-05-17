@@ -1,0 +1,14 @@
+{
+  "builds": [
+    {
+      "src": "piki_ora/wsgi.py",
+      "use": "@vercel/python"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "piki_ora/wsgi.py"
+    }
+  ]
+}
